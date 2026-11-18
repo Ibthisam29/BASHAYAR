@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Writing — Bashayar</title>
+<meta name="description" content="Essays and notes by Bashayar on psychology, literature, film and community.">
+<meta property="og:title" content="Writing — Bashayar">
+<meta property="og:description" content="Essays and notes by Bashayar on psychology, literature, film and community.">
+<meta property="og:image" content="assets/og-image.jpg">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;else if(matchMedia('(prefers-color-scheme: dark)').matches)document.documentElement.dataset.theme='dark'}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="index.html" class="brand" aria-label="Bashayar home">
+      <img src="assets/star.svg" alt="" width="34" height="34"><span class="brand-bar"></span><span class="brand-word">BASHAYAR</span>
+    </a>
+    <nav id="menu" class="menu" aria-label="Primary">
+      <a href="about.html">About</a>
+      <a href="work.html">Work</a>
+      <a href="writing.html" class="active" aria-current="page">Writing</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap reveal">
+      <p class="eyebrow">Writing</p>
+      <h1>Notes &amp; essays.</h1>
+      <p class="lead">Reflections on psychology, literature, film and the quiet dignity of ordinary life.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="head head-row reveal">
+        <p class="muted small" id="workCount"></p>
+        <div class="filters" aria-label="Filter writing">
+          <button class="chip-btn active" data-filter="all" aria-pressed="true">All</button>
+          <button class="chip-btn" data-filter="essay" aria-pressed="false">Essay</button>
+          <button class="chip-btn" data-filter="psychology" aria-pressed="false">Psychology</button>
+          <button class="chip-btn" data-filter="research" aria-pressed="false">Research</button>
+          <button class="chip-btn" data-filter="film" aria-pressed="false">Film</button>
+          <button class="chip-btn" data-filter="literature" aria-pressed="false">Literature</button>
+          <button class="chip-btn" data-filter="community" aria-pressed="false">Community</button>
+        </div>
+      </div>
+      <!-- EDIT: posts. Copy post-rest-is-not-a-reward.html for each new article -->
+      <div class="posts" data-filter-target>
+        <a class="post reveal" href="post-rest-is-not-a-reward.html" data-cat="essay"><span class="post-date">Essay</span><h3>Rest is not a reward</h3><p>Why recovery belongs at the start of the week, not the end.</p><span class="more">Read →</span></a>
+        <a class="post reveal" href="#" data-cat="film"><span class="post-date">Film</span><h3>Silence on screen</h3><p>What quiet films teach us about attention and presence.</p><span class="more">Read →</span></a>
+        <a class="post reveal" href="#" data-cat="psychology"><span class="post-date">Psychology</span><h3>Titles and the self</h3><p>Separating who we are from what we are called.</p><span class="more">Read →</span></a>
+        <a class="post reveal" href="#" data-cat="research"><span class="post-date">Research</span><h3>Listening as method</h3><p>Notes on what qualitative interviews ask of the researcher.</p><span class="more">Read →</span></a>
+        <a class="post reveal" href="#" data-cat="community"><span class="post-date">Community</span><h3>Talking without stigma</h3><p>What makes a conversation about wellbeing feel safe.</p><span class="more">Read →</span></a>
+        <a class="post reveal" href="#" data-cat="literature"><span class="post-date">Literature</span><h3>Ordinary dignity</h3><p>Characters who matter without doing anything remarkable.</p><span class="more">Read →</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote-band">
+    <div class="wrap reveal">
+      <img src="assets/star.svg" alt="" width="40" height="40">
+      <!-- EDIT: replace with a real quote -->
+      <blockquote>“Human worth is not earned through output. It is the ground we stand on before we do anything at all.”</blockquote>
+      <p class="label light">— Bashayar</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <a href="index.html" class="brand light"><img src="assets/star.svg" alt="" width="28" height="28"><span class="brand-bar"></span><span class="brand-word">BASHAYAR</span></a>
+      <nav class="foot-links" aria-label="Footer"><a href="about.html">About</a><a href="work.html">Work</a><a href="writing.html">Writing</a><a href="contact.html">Contact</a></nav>
+    </div>
+    <p class="disclaimer"><strong>Disclaimer:</strong> Content on this website is for general educational purposes only and is not individual psychological, counselling or medical advice. If you are in distress or crisis, please contact a qualified professional or your local emergency services.</p>
+    <p class="copy">© <span id="yr"></span> Bashayar. All rights reserved.</p>
+  </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Bashayar</title>
+<meta name="description" content="Contact Bashayar for research collaborations, talks, writing and film projects.">
+<meta property="og:title" content="Contact — Bashayar">
+<meta property="og:description" content="Contact Bashayar for research collaborations, talks, writing and film projects.">
+<meta property="og:image" content="assets/og-image.jpg">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;else if(matchMedia('(prefers-color-scheme: dark)').matches)document.documentElement.dataset.theme='dark'}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="index.html" class="brand" aria-label="Bashayar home">
+      <img src="assets/star.svg" alt="" width="34" height="34"><span class="brand-bar"></span><span class="brand-word">BASHAYAR</span>
+    </a>
+    <nav id="menu" class="menu" aria-label="Primary">
+      <a href="about.html">About</a>
+      <a href="work.html">Work</a>
+      <a href="writing.html">Writing</a>
+      <a href="contact.html" class="active" aria-current="page">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap reveal">
+      <p class="eyebrow">Contact</p>
+      <h1>Collaborations, talks &amp; enquiries.</h1>
+      <p class="lead">For research collaborations, speaking, writing or film projects, send a note. Responses usually within a few working days.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap grid-2">
+      <div class="reveal">
+        <p class="label">Email</p>
+        <!-- EDIT: set real email (the form sends to this address) -->
+        <p class="contact-line"><a id="contactEmail" href="mailto:hello@bashayar.com">hello@bashayar.com</a></p>
+        <ul class="facts">
+          <li><span>Research</span>Collaborations &amp; co-authorship</li>
+          <li><span>Speaking</span>Talks, panels &amp; workshops</li>
+          <li><span>Creative</span>Writing &amp; film projects</li>
+        </ul>
+        <div class="notice">
+          <strong>Please note:</strong> this contact form is not a counselling or crisis service. If you need urgent support, contact a qualified professional or your local emergency services.
+        </div>
+      </div>
+      <form class="form reveal" id="contactForm">
+        <label>Name<input name="name" required autocomplete="name"></label>
+        <label>Email<input name="email" type="email" required autocomplete="email"></label>
+        <label>Subject
+          <select name="subject"><option>Research collaboration</option><option>Speaking / talk</option><option>Writing</option><option>Film</option><option>Other</option></select>
+        </label>
+        <label>Message<textarea name="message" rows="6" required></textarea></label>
+        <button class="btn btn-primary" type="submit">Send message</button>
+        <p class="form-note" id="formNote" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <a href="index.html" class="brand light"><img src="assets/star.svg" alt="" width="28" height="28"><span class="brand-bar"></span><span class="brand-word">BASHAYAR</span></a>
+      <nav class="foot-links" aria-label="Footer"><a href="about.html">About</a><a href="work.html">Work</a><a href="writing.html">Writing</a><a href="contact.html">Contact</a></nav>
+    </div>
+    <p class="disclaimer"><strong>Disclaimer:</strong> Content on this website is for general educational purposes only and is not individual psychological, counselling or medical advice. If you are in distress or crisis, please contact a qualified professional or your local emergency services.</p>
+    <p class="copy">© <span id="yr"></span> Bashayar. All rights reserved.</p>
+  </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
